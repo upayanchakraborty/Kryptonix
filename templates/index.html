@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block title %}Jeevan — Your Wellness Companion{% endblock %}
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Find balance, build healthy habits</h1>
+        <p>Mindfulness, movement, sleep, and nutrition—personalized in one wellness app.</p>
+        <a class="cta" href="#get-started">Get Started</a>
+    </div>
+</section>
+
+<section class="features" id="get-started">
+    <div class="feature">
+        <h3>Mindfulness</h3>
+        <p>Guided sessions to reduce stress and improve focus.</p>
+    </div>
+    <div class="feature">
+        <h3>Movement</h3>
+        <p>Short routines you can do anywhere, anytime.</p>
+    </div>
+    <div class="feature">
+        <h3>Sleep</h3>
+        <p>Wind-down audios and tips for better rest.</p>
+    </div>
+    <div class="feature">
+        <h3>Nutrition</h3>
+        <p>Simple, nourishing recipes and mindful eating prompts.</p>
+    </div>
+    <a class="secondary-cta" href="#newsletter">Subscribe for updates</a>
+    
+    <form id="newsletter" class="newsletter" method="post" action="#">
+        <label for="email">Join our newsletter</label>
+        <div class="input-row">
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <button type="submit">Subscribe</button>
+        </div>
+    </form>
+    
+    <section class="social-proof">
+        <p>Trusted by wellness seekers worldwide</p>
+        <div class="avatars">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="avatar" aria-hidden="true"></div>
+            <span class="count">10k+ joined</span>
+        </div>
+    </section>
+</section>
+{% endblock %}
